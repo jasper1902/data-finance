@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaGithubSquare } from "react-icons/fa";
 const Nav = () => {
     const [nav, setNav] = useState(false)
     const handleNav = () => {
@@ -10,12 +11,13 @@ const Nav = () => {
         <>
             <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
                 <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-                <ul className='md:flex gap-4 hidden'>
+                <ul className='md:flex gap-4 hidden items-center'>
                     <li className='cursor-pointer'>Home</li>
                     <li className='cursor-pointer'>Company</li>
                     <li className='cursor-pointer'>Resources</li>
                     <li className='cursor-pointer'>About</li>
                     <li className='cursor-pointer'>Contact</li>
+                    <li><a href="https://github.com/jasper1902/data-finance"><FaGithubSquare size={30}/></a></li>
                 </ul>
 
                 <div onClick={handleNav} className='cursor-pointer block md:hidden' draggable>
